@@ -52,3 +52,10 @@ Units is a libaray that manages percision and conversion between unites of measu
     - Astronomical Unit
     - light year
     - parsec
+
+### Time
+- Second
+- Minutes
+- Hour
+- Day
+- Year
