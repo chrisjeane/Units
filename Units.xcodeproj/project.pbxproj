@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8382C4E51B1AA00E00F96AB3 /* Measurment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382C4E41B1AA00E00F96AB3 /* Measurment.swift */; };
 		83A0E7391B16C9B900D2F6D8 /* Units.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A0E7381B16C9B900D2F6D8 /* Units.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83A0E73F1B16C9B900D2F6D8 /* Units.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A0E7331B16C9B900D2F6D8 /* Units.framework */; };
-		83A0E7461B16C9B900D2F6D8 /* UnitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0E7451B16C9B900D2F6D8 /* UnitsTests.swift */; };
+		83A0E7511B16CBE400D2F6D8 /* LengthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0E7501B16CBE400D2F6D8 /* LengthTests.swift */; };
+		83A0E7571B16CD2C00D2F6D8 /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0E7561B16CD2C00D2F6D8 /* Length.swift */; };
+		83A0E7591B16D34A00D2F6D8 /* UnitCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0E7581B16D34A00D2F6D8 /* UnitCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8382C4E41B1AA00E00F96AB3 /* Measurment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurment.swift; sourceTree = "<group>"; };
 		83A0E7331B16C9B900D2F6D8 /* Units.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Units.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A0E7371B16C9B900D2F6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83A0E7381B16C9B900D2F6D8 /* Units.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Units.h; sourceTree = "<group>"; };
 		83A0E73E1B16C9B900D2F6D8 /* UnitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A0E7441B16C9B900D2F6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83A0E7451B16C9B900D2F6D8 /* UnitsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsTests.swift; sourceTree = "<group>"; };
+		83A0E7501B16CBE400D2F6D8 /* LengthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LengthTests.swift; path = LengthTests/LengthTests.swift; sourceTree = "<group>"; };
+		83A0E7561B16CD2C00D2F6D8 /* Length.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Length.swift; path = Length/Length.swift; sourceTree = "<group>"; };
+		83A0E7581B16D34A00D2F6D8 /* UnitCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +77,10 @@
 		83A0E7351B16C9B900D2F6D8 /* Units */ = {
 			isa = PBXGroup;
 			children = (
-				83A0E7381B16C9B900D2F6D8 /* Units.h */,
+				83A0E7521B16CC7300D2F6D8 /* UnitCategories */,
 				83A0E7361B16C9B900D2F6D8 /* Supporting Files */,
+				83A0E7381B16C9B900D2F6D8 /* Units.h */,
+				8382C4E41B1AA00E00F96AB3 /* Measurment.swift */,
 			);
 			path = Units;
 			sourceTree = "<group>";
@@ -88,7 +96,7 @@
 		83A0E7421B16C9B900D2F6D8 /* UnitsTests */ = {
 			isa = PBXGroup;
 			children = (
-				83A0E7451B16C9B900D2F6D8 /* UnitsTests.swift */,
+				83A0E74F1B16CAEA00D2F6D8 /* LengthTests */,
 				83A0E7431B16C9B900D2F6D8 /* Supporting Files */,
 			);
 			path = UnitsTests;
@@ -100,6 +108,23 @@
 				83A0E7441B16C9B900D2F6D8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83A0E74F1B16CAEA00D2F6D8 /* LengthTests */ = {
+			isa = PBXGroup;
+			children = (
+				83A0E7501B16CBE400D2F6D8 /* LengthTests.swift */,
+			);
+			name = LengthTests;
+			sourceTree = "<group>";
+		};
+		83A0E7521B16CC7300D2F6D8 /* UnitCategories */ = {
+			isa = PBXGroup;
+			children = (
+				83A0E7581B16D34A00D2F6D8 /* UnitCategory.swift */,
+				83A0E7561B16CD2C00D2F6D8 /* Length.swift */,
+			);
+			name = UnitCategories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A0E7571B16CD2C00D2F6D8 /* Length.swift in Sources */,
+				8382C4E51B1AA00E00F96AB3 /* Measurment.swift in Sources */,
+				83A0E7591B16D34A00D2F6D8 /* UnitCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83A0E7461B16C9B900D2F6D8 /* UnitsTests.swift in Sources */,
+				83A0E7511B16CBE400D2F6D8 /* LengthTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +351,7 @@
 		83A0E74A1B16C9B900D2F6D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +361,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		83A0E74B1B16C9B900D2F6D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -399,6 +430,7 @@
 				83A0E74B1B16C9B900D2F6D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83A0E74C1B16C9B900D2F6D8 /* Build configuration list for PBXNativeTarget "UnitsTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +439,7 @@
 				83A0E74E1B16C9B900D2F6D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
