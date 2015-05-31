@@ -38,6 +38,22 @@ public enum Length: UnitCategory {
     case Micron
     case Myriametre
     
+    // Imperial
+    case Inch
+    case Foot
+    case Yard
+    case Mile
+    case League
+    
+    // Marine
+    case Fathom
+    case NauticalMile
+    
+    // Astronomy
+    case AstronomicalUnit
+    case LightYear
+    case Parsec
+    
     public func baseUnitConversionFactor() -> Double {
         switch self {
         // SI
@@ -93,6 +109,33 @@ public enum Length: UnitCategory {
             return Length.Micrometer.baseUnitConversionFactor()
         case .Myriametre:
             return 1.0e4
+            
+        // Imperial
+
+        case .Inch:
+            return 0.00254
+        case .Foot:
+            return 0.3048
+        case .Yard:
+            return 0.9144
+        case .Mile:
+            return 1_609.344
+        case .League:
+            return 4_828.032
+            
+        // Marine
+        case .Fathom:
+            return 1.8288
+        case .NauticalMile:
+            return 1_852
+            
+        // Astronomy
+        case .AstronomicalUnit:
+            return 149597_870_700
+        case .LightYear:
+            return 9_460_730_472_580_800
+        case .Parsec:
+            return 30_856_775_814_671_900
         }
     }
 }
