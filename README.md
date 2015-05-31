@@ -5,9 +5,9 @@ Units is a libaray that manages percision and conversion between unites of measu
 
     let meters = Measurement<Length>(value: 1, unit: Length.Meter)
     if let kilometers = meters.toUnit(Length.Kilometer) {
-        println("\(kilometers.value) kilometers in \(meters.value) meters"
+        println("\(kilometers.value) kilometers in \(meters.value) meters")
     } else {
-        println("Conversion Failed"
+        println("Conversion Failed")
     }
 
 ## Supported Units
