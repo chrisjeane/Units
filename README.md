@@ -1,54 +1,54 @@
-### Units
+## Units
 Units is a libaray that manages percision and conversion between unites of measurments.
 
-## Length
+## Example
+
+    let meters = Measurement<Length>(value: 1, unit: Length.Meter)
+    if let kilometers = meters.toUnit(Length.Kilometer) {
+        println("\(kilometers.value) kilometers in \(meters.value) meters"
+    } else {
+        println("Conversion Failed"
+    }
+
+## Supported Units
+
+### Length
 - SI Units
--- meter
--- decameter 
--- hectometer
--- kilometer
--- megameter
--- gigameter
--- terameter
--- petameter
--- exameter
--- zettameter
--- yottameter
--- decimeter
--- centimeter
--- millimeter
--- micrometer
--- nanometer
--- picometer
--- femtometer
--- attometer
--- zeptometer
--- yoctometer
-- fermi (fm) = 1 femtometre
-- àngström (Å) = 100 picometers
-- micron = 1 micrometre
-- myriametre = 10,000 meters
+    - meter
+    - decameter 
+    - hectometer
+    - kilometer
+    - megameter
+    - gigameter
+    - terameter
+    - petameter
+    - exameter
+    - zettameter
+    - yottameter
+    - decimeter
+    - centimeter
+    - millimeter
+    - micrometer
+    - nanometer
+    - picometer
+    - femtometer
+    - attometer
+    - zeptometer
+    - yoctometer
+    - fermi
+    - àngström
+    - micron
+    - myriametre
 - Imperial
--- thou = 1/1000 inch
--- line = 1/12 inch
--- inch = 2.54 cm
--- foot = 0.3048 m
--- yard = 0.9144 m
--- mile = 1609.344 m
--- league = 3 miles
+    - inch
+    - foot
+    - yard
+    - mile
+    - league
 - Marine
--- fathom = 1.8288 m
--- nautical mile = 1852 m
-- Surveying
--- chain = 20.1 m
--- rod = 5 m
+    - fathom
+    - nautical mile
 - Astronomy
--- Earth radius (R⊕) = 6,371 km
--- Astronomical Unit (AU) = 149,597,870,700 m
--- light eyar (ly) = 9,460,730,472,580.8 km
--- parsec (pc) = 30,856,775,814,671.9 km
--- Hubble Length = 13.8 billon light year/306593922 parsec
-- Physics
--- Atomic Unit = 0.52911721092 * 10^-10 m
--- Natural Unit = 386.15926800 x 10^-15 m
--- Planck Length = 1.616199 x 10^-15
+    - Astronomical Unit
+    - light year
+    - parsec
